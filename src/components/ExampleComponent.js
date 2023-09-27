@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 
 function ExampleComponent() {
-    var error = document.getElementById('error');
     const[count, setCount] = useState(0);
     useEffect(() =>{
         document.title = `Count: ${count}`;
@@ -24,17 +23,17 @@ function ExampleComponent() {
             <button onClick={()=> 
             {
             setCount(count + 1)
-            error.classList.remove('show');
+            document.getElementById('error').classList.remove('show');
             }
             }>Increment</button>
             <button onClick={()=> 
             {
             if(count>0){
                 setCount(count - 1)
-                error.classList.remove('show');
+                document.getElementById('error').classList.remove('show');
             }
             else {
-                error.classList.add('show');
+                document.getElementById('error').classList.add('show');
             }
             }}>Decrement</button>
             <button id='zero' className='go-back-zero' onClick={()=>{
