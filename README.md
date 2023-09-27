@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Overall the thing were ease but i faced some dificulties in showing the error , i was thing of using alert but the UI would have been differnt so i thought about some different approach and used some classes to hide and display the error and added and remove the classses the time we needed .
